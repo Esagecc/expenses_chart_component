@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <main>
+    <header>
+      <div class="balance">
+        <p class="my-balance">
+          My balance
+        </p>
+        <div class="balance-amount">
+          $921.48
+        </div>
+      </div>
+        <img src="images/logo.svg" class="logo" alt="logo">
+      
+    </header>
+
+
+    <section class="graph">
+
+      
+      <h3>
+        Spending - Last 7 days
+      </h3>
+
+      
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    </section>
+
+    
+
+    <section class="total">
+      <div class="this-amount">
+        <h6>
+          Total this month
+        </h6>
+        <div class="month-amount">
+          $478.33
+        </div>
+      </div>
+      <div class="percentage">
+        <div class="percent">
+          +2.4%
+        </div>
+        <div class="last-month">
+          from last month
+        </div>
+      </div>
+
+    </section>
+  </main>
+  
+  
+
+  
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  
+  
+
+ 
+  
+  
+  <div class="footer attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="http://esagewebdev.com/" target="_blank">Elizabeth Cantu</a>.
+</div>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
