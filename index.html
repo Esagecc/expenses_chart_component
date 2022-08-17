@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Expenses chart component</title>
 
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 
 </head>
 <body>
@@ -24,44 +25,37 @@
         </div>
       </div>
         <img src="images/logo.svg" class="logo" alt="logo">
-      
     </header>
 
-
-    <section class="graph">
-
-      
-      <h3>
-        Spending - Last 7 days
-      </h3>
-
-      
-    <div>
-      <canvas id="myChart"></canvas>
-    </div>
-    </section>
-
+    <div class="graph-sec">
+      <div class="container">
+        <h3>
+          Spending - Last 7 days
+        </h3>
+        <canvas id="canvas"></canvas>
+      </div>
     
+      <div class="total">
+        <div class="this-amount">
+          <p>
+            Total this month
+          </p>
+          <div class="month-amount">
+            $478.33
+          </div>
+        </div>
+        <div class="percentage">
+          <div class="percent">
+            +2.4%
+          </div>
+          <div class="last-month">
+            from last month
+          </div>
+        </div>
 
-    <section class="total">
-      <div class="this-amount">
-        <h6>
-          Total this month
-        </h6>
-        <div class="month-amount">
-          $478.33
-        </div>
       </div>
-      <div class="percentage">
-        <div class="percent">
-          +2.4%
-        </div>
-        <div class="last-month">
-          from last month
-        </div>
-      </div>
+    </div>
 
-    </section>
   </main>
   
   
@@ -87,14 +81,8 @@
     Coded by <a href="http://esagewebdev.com/" target="_blank">Elizabeth Cantu</a>.
 </div>
 
-<script>
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-</script>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
 
 </body>
 </html>

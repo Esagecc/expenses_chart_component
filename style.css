@@ -23,10 +23,9 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
-
 main {
     margin: 50px auto;
-    width: 85%;
+    width: 90%;
 }
 
 header {
@@ -45,6 +44,12 @@ header {
     height: 2.5rem;
 }
 
+.graph-sec {
+    background-color: var(--lt-orange);
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+}
+
 .my-balance {
     font-size: 0.9rem;
     padding-bottom: .5rem;
@@ -56,12 +61,46 @@ header {
     font-weight: 700;
 }
 
-.graph {
-    background-color: var(--lt-orange);
+h3 {
+    font-size: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+#canvas {
+    width: 100%;
 }
 
 .total {
-    background-color: var(--lt-orange);
+    border-top: 2px solid var(--cream);
+    padding-top: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.this-amount p {
+    font-size: 1rem;
+    color: var(--md-brown);
+    padding-bottom: .4rem;
+}
+
+.month-amount {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.percentage {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.percent {
+    text-align: right;
+    font-weight: 700;
+}
+
+.last-month {
+    color: var(--md-brown);
 }
 
 .attribution { 
@@ -73,11 +112,3 @@ header {
 .attribution a {
     color: hsl(228, 45%, 44%); 
 }
-/* 
-#myChart {
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    border: 2px solid green;
-    color: blue;
-} */
