@@ -48,6 +48,7 @@ header {
     background-color: var(--lt-orange);
     padding: 2rem 1rem;
     border-radius: .5rem;
+    
 }
 
 .my-balance {
@@ -68,6 +69,8 @@ h3 {
 
 #canvas {
     width: 100%;
+    height: 150%;
+    padding-bottom:1.5rem;
 }
 
 .total {
