@@ -45,7 +45,7 @@ xmlhttp.onreadystatechange = function(){
                     console.log(e.native.target.style.cursor = 'pointer');
                 } 
                 if(chartElement.length == 0){
-                  e.hative.target.style.cursor = 'default';  
+                  e.native.target.style.cursor = 'default';  
                 }    
                 },
         scales: {
