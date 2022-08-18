@@ -30,7 +30,7 @@ xmlhttp.onreadystatechange = function(){
                 'hsl(10, 79%, 65%)',
                 'hsl(10, 79%, 65%)'
             ],
-            borderRadius: '3'
+            borderRadius: '5'
         }]
         },
         options: {
@@ -40,6 +40,14 @@ xmlhttp.onreadystatechange = function(){
                     right: -10
                 }
             },
+            onHover: function(e, chartElement) {
+                if(chartElement.length == 1){
+                    console.log(e.native.target.style.cursor = 'pointer');
+                } 
+                if(chartElement.length == 0){
+                  e.hative.target.style.cursor = 'default';  
+                }    
+                },
         scales: {
             y: {
                 beginAtZero: true
@@ -66,11 +74,15 @@ xmlhttp.onreadystatechange = function(){
         plugins: {
             legend: {
                 display: false
-            }
+            },
+            datasets: {
+                onHover: function(e) {
+                   e.target.style.cursor = 'pointer';
+                }
+             }
         }
     }
 });
 
     }
 }
-
